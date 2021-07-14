@@ -1,4 +1,5 @@
 export default {
+  dist: './docs',
   buildOptions: {
     sitemap: true,
   },
