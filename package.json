@@ -1,7 +1,6 @@
 {
   "name": "astro",
   "version": "0.0.1",
-  "main": "index.astro",
   "repository": "git@github:0cool-f/astro.git",
   "author": "0cool-f <ravnos.1@tiscali.it>",
   "license": "GLWTPL",
