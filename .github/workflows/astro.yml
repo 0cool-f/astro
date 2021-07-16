@@ -13,11 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install
-        run: yarn install
+#      - name: Install
+#        run: yarn install
 
-      - name: Build
-        run: yarn build
+#      - name: Build
+#        run: yarn build
 
       - name: Test
         run: ls -lah ./docs && cat ./docs/index.html
