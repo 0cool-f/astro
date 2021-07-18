@@ -12,12 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-#      - name: Install
-#        run: yarn install
-
-#      - name: Build
-#        run: yarn build
-
-      - name: Test
-        run: ls -lah ./docs && cat ./docs/index.html
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: yarn install
+      - run: yarn build
+      - run: ls -lah ./docs && cat ./docs/index.html
