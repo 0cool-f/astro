@@ -1,0 +1,23 @@
+{
+  "name": "astro",
+  "version": "0.0.1",
+  "main": "index.html",
+  "repository": "git@github:0cool-f/astro.git",
+  "homepage": "https://0cool-f.github.io/astro",
+  "author": "0cool-f <ravnos.1@tiscali.it>",
+  "license": "GLWTPL",
+  "private": true,
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "^0.17.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.4"
+  },
+  "snowpack": {
+    "workspaceRoot": "../.."
+  }
+}
