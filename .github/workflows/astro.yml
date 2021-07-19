@@ -14,11 +14,13 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Install and Build 🔧
+      - name: Install ⚙️
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-        run: |
+
+        - name: Build 🛠
+          run: |
           yarn install
           yarn build
 
