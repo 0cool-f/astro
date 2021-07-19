@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: '16'
 
-        - name: Build 🛠
-          run: |
+      - name: Build 🛠
+        run: |
           yarn install
           yarn build
 
