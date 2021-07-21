@@ -24,8 +24,15 @@ jobs:
           yarn install
           yarn build
 
+#      - name: Deploy 🚀
+#        uses: JamesIves/github-pages-deploy-action@4.1.4
+#        with:
+#          branch: gh-pages
+#          folder: dist
+
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          branch: gh-pages
-          folder: .
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
